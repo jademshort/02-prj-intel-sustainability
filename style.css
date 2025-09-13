@@ -1,1 +1,139 @@
-/* Add your CSS here */
+.timeline-card img {
+  width: 100%;
+  max-width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 12px auto;
+}
+.timeline-card:hover h2,
+.timeline-card:hover h3,
+.timeline-card:hover img {
+  display: none;
+}
+.timeline-card p {
+  display: none;
+  margin-top: 12px;
+  color: #003366;
+  font-size: 1em;
+  font-family: 'Inter', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  text-align: center;
+}
+
+.timeline-card:hover {
+  background: #2eb872; /* Green background on hover */
+  box-shadow: 0 4px 20px rgba(46,184,114,0.15);
+}
+
+.timeline-card:hover p {
+  display: block;
+  color: #fff;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 32px 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-card {
+  background: #e6f0fa; /* Light blue background */
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 24px 20px;
+  min-width: 220px;
+  max-width: 220px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.timeline-card h2 {
+  font-family: 'Inter', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #003366; /* Intel dark blue */
+  font-size: 1.6em;
+  margin: 0 0 8px 0;
+}
+
+.timeline-card h3 {
+  font-family: 'Inter', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #2eb872; /* Sustainability green */
+  font-size: 1.1em;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+body {
+  background: #ddeeff; /* Light blue background for the page */
+  margin: 0;
+  padding: 0;
+}
+.header-underline {
+  width: 70px;
+  height: 6px; /* Thicker line */
+  background: #7be495; /* Light green */
+  margin: 18px auto 32px auto; /* Centered, space above and below */
+  border-radius: 4px; /* Rounded corners */
+  opacity: 0.9;
+  display: block;
+}
+/* Center and style the main header and subheading */
+h1 {
+  background: linear-gradient(135deg, #fff 0%, #b3d1ff 100%); /* White to light blue from bottom right */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
+  color: unset; /* Remove solid color if set */
+  text-align: center; /* Center the main header */
+  font-size: 3.2em;   /* Make the header bigger */
+  font-weight: bold;  /* Make the header bold */
+  font-family: 'Inter', 'Arial', 'Helvetica Neue', Helvetica, sans-serif; /* Modern, clean font */
+  text-transform: uppercase; /* Uppercase letters */
+  margin-top: 10px;   /* Space above the header */
+  margin-bottom: 24px; /* More space below the header */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subheading {
+  text-align: center; /* Center the subheading */
+  font-family: 'Inter', 'Arial', 'Helvetica Neue', Helvetica, sans-serif; /* Consistent font with header */
+  font-size: 1.3em;   /* Slightly larger than normal text */
+  font-weight: normal;/* Normal weight for subheading */
+  margin-top: 0;      /* Remove extra space above */
+  margin-bottom: 10px;/* Space below the subheading */
+  color: #fff;        /* White for subheading */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  display: block;
+  margin: 2px auto 24px auto; /* More space below the logo */
+  width: 100px;
+  height: auto;
+}
+.header-section {
+  background: linear-gradient(135deg, #003366 70%, #0071c5 100%);
+  /* #003366 is a deep Intel blue, #0071c5 is a lighter Intel blue */
+  padding: 40px 24px 30px 24px; /* Adds space above, below, and on sides */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08); /* Optional: adds a soft shadow for depth */
+}
+.scroll-hint {
+  text-align: center;
+  color: #003366;
+  font-size: 1em;
+  font-family: 'Inter', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 18px;
+  opacity: 0.7;
+  /* Add any other styles you want */
+}
