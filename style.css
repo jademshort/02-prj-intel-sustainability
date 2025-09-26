@@ -1,3 +1,34 @@
+/* Custom styles for Bootstrap modals to match site theme */
+.modal-content {
+  background: #e6f0fa !important; /* Light blue background for entire modal */
+  border-radius: 0 !important;    /* Square corners */
+}
+.modal-header {
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+.modal-title {
+  color: #003366 !important;      /* Dark blue for header text */
+}
+.modal-body {
+  color: #003366 !important;      /* Dark blue for body text */
+}
+/* Custom background for the subscription box */
+.subscription-bg {
+  background: #e6f0fa !important;
+  border-radius: 0 !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+/* Make all primary and general buttons Intel dark blue and square */
+.btn-primary, .btn {
+  background-color: #003366 !important;
+  border-color: #003366 !important;
+  border-radius: 0 !important;
+}
+.btn-primary:hover, .btn:hover {
+  background-color: #002244 !important;
+  border-color: #002244 !important;
+}
 body::-webkit-scrollbar,
 html::-webkit-scrollbar {
   width: 8px !important;
@@ -56,7 +87,7 @@ body {
   color: #003366;
   font-size: 1em;
   font-family: 'Inter', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  text-align: left;
+  text-align: right;
 }
 
 .timeline-card:hover {
@@ -121,6 +152,7 @@ body {
   margin: 0 0 8px 0;
   font-weight: 800;
   letter-spacing: 0.03em;
+  text-align: right !important;
 }
 
 .timeline-card h3 {
@@ -131,6 +163,12 @@ body {
   font-weight: 400;
   letter-spacing: 0.04em;
   transition: color 0.2s;
+  text-align: right !important;
+}
+/* Force right alignment for first column blurbs and their headers */
+.col-md-4 > .mb-4 h4,
+.col-md-4 > .mb-4 p {
+  text-align: right !important;
 }
 body {
   background: #ddeeff; /* Light blue background for the page */
