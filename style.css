@@ -165,11 +165,6 @@ body {
   transition: color 0.2s;
   text-align: right !important;
 }
-/* Force right alignment for first column blurbs and their headers */
-.col-md-4 > .mb-4 h4,
-.col-md-4 > .mb-4 p {
-  text-align: right !important;
-}
 body {
   background: #ddeeff; /* Light blue background for the page */
   margin: 0;
